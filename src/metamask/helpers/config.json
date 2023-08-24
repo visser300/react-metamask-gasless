@@ -1,0 +1,8 @@
+{
+    "accountIndex": 0,
+    "chainId": 80001,
+    "rpcUrl": "https://rpc-mumbai.maticvigil.com",
+    "bundlerUrl": "https://bundler.biconomy.io/api/v2/80001/WnVqvtBAj.1734ec95-b7c9-43a9-b63a-15ef397e47a6",
+    "biconomyPaymasterUrl": "https://paymaster.biconomy.io/api/v1/80001/WnVqvtBAj.1734ec95-b7c9-43a9-b63a-15ef397e47a6"
+  }
+   

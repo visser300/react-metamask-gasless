@@ -1,17 +1,15 @@
-import ConnectMetamask from "./components/ConnectMetamask";
-import DetectMetamask from "./components/DetectMetamask";
+import ApproveTransaction from "./components/ApproveTransaction";
+import TransferTrasaction from "./components/TransferTrasaction";
 import loadSmartContract from "./helpers/loadSmartContract";
-import requestAccounts from "./helpers/requestAccounts";
 import changeNetwork from "./helpers/changeNetwork";
 import useMetamask from "./useMetamask";
 import { MetamaskProvider } from "./context";
 
 export {
-  ConnectMetamask,
-  DetectMetamask,
+  ApproveTransaction,
+  TransferTrasaction,
   MetamaskProvider,
   useMetamask,
-  requestAccounts,
   changeNetwork,
   loadSmartContract
 };
