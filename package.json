@@ -15,7 +15,9 @@
     "@biconomy/bundler": "^3.1.0-alpha.0",
     "@biconomy/common": "^3.1.0-alpha.0",
     "@biconomy/core-types": "^3.1.0-alpha.0",
+    "@biconomy/mexa": "3.0.6",
     "@biconomy/paymaster": "^3.1.0-alpha.0",
+    "@opengsn/provider": "^3.0.0-beta.6",
     "@web3-react/core": "6.1.9",
     "chalk": "^4.1.2",
     "ethers": "5.7.1",
@@ -25,6 +27,7 @@
     "react-dom": "18.0.0",
     "react-router-dom": "6.4.2",
     "react-scripts": "4.0.3",
+    "web3": "^4.1.1",
     "yargs": "^17.7.1"
   },
   "devDependencies": {
@@ -39,10 +42,10 @@
     "typescript": "^5.1.6"
   },
   "eslintConfig": {
-      "extends": [
-        "react-app",
-        "react-app/jest"
-      ]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "scripts": {
     "start": "react-scripts start",
