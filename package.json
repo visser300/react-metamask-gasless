@@ -11,9 +11,11 @@
   "license": "MIT",
   "main": "src/index.tsx",
   "dependencies": {
+    "@biconomy/mexa": "2.0.38",
     "@opengsn/dev": "3.0.0-beta.6",
     "@opengsn/provider": "3.0.0-beta.6",
     "@web3-react/core": "6.1.9",
+    "ethereumjs-abi": "^0.6.8",
     "ethers": "5.7.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
