@@ -4,11 +4,11 @@ import  abi from "ethereumjs-abi"
 
 // https://dashboard-gasless.biconomy.io/dapps/64e8b808789d876fc0b9b72d/overview
 const apiKey = "w_qIeDGSN.8905473f-50ae-4418-84a9-58e9c3a79f51"
-const apiId = "ddbd267f-c6d0-4b22-a88b-007a9216c6b0"
+const apiId = "729b05e4-2e2a-4e9e-8647-ae4d338c9a40"
 const apiUrl = 'https://api.biconomy.io/api/v2/meta-tx/native'
 
 const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
-const nftAddress = '0x311ce8F16FDFD83F27A2625b0780B06Fd6CB6293'
+const nftAddress = '0x68755eff321524fF157E402b1d4dbA95e32d4B4f'
 const biconomySystemInfo = 
 {
   mumbai: {
@@ -18,7 +18,7 @@ const biconomySystemInfo =
 }
   
 
-export const transferTransaction = async (tokenId: number) => {
+export const burnTransaction = async (tokenId: number) => {
 
 	try {
 
@@ -27,9 +27,9 @@ export const transferTransaction = async (tokenId: number) => {
     const signer = provider.getSigner();
     const myaddress = await signer.getAddress()
 
-    const nftAddress = '0x311ce8F16FDFD83F27A2625b0780B06Fd6CB6293'
+    const nftAddress = '0x68755eff321524fF157E402b1d4dbA95e32d4B4f'
     const abi = [
-      "function transferFrom(address, address, uint256)",
+      "function bulkBurn(uint256[])",
     ]
 
     const biconomy = new Biconomy(window.ethereum, {
@@ -61,7 +61,7 @@ const onSubmitWithPersonalSign = async (ethersProvider: ethers.providers.Web3Pro
       console.log("Sending meta transaction");
       let userAddress = selectedAddress;
 
-      let { data } = await contract.populateTransaction.transferFrom(userAddress.toLowerCase(), "0x7DFcAaC23908ed3fC1730560a86AE1d40784ebe9".toLowerCase(), tokenId)
+      let { data } = await contract.populateTransaction.bulkBurn([tokenId])
       let gasPrice = await ethersProvider.getGasPrice();
       let gasLimit = await ethersProvider.estimateGas({
         to: nftAddress,

@@ -1,4 +1,5 @@
 import { TransferTrasaction } from "../metamask";
+import { BurnTrasaction } from "../metamask";
 
 export default function HelloMetamask() {
 
@@ -8,6 +9,10 @@ export default function HelloMetamask() {
         <br/>
         <br/>
         <TransferTrasaction />
+        <br/>
+        <br/>
+        <br/>
+        <BurnTrasaction />
       </div>
     </div>
   );
