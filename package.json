@@ -17,6 +17,7 @@
     "@web3-react/core": "6.1.9",
     "ethereumjs-abi": "^0.6.8",
     "ethers": "5.7.1",
+    "ethers-eip712": "0.2.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-router-dom": "6.4.2",
